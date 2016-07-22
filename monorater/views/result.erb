@@ -13,13 +13,16 @@
 
 <!-- One -->
     <section id="one" class="main style2 right dark fullscreen">
-	    <div class="content box style2">
+	    <div class="content box style2" id="one-text">
 			<header>
-				<h2>Music</h2>
+				<h2><%= @food_name %></h2>
 			<header>
-				<p>Lorem ipsum dolor sit amet et sapien sed elementum egestas dolore condimentum.
-				    Fusce blandit ultrices sapien, in accumsan orci rhoncus eu. Sed sodales venenatis arcu,
-					id varius justo euismod in. Curabitur egestas consectetur magna.</p>
+				<div class="txt-box">
+					<p>Your input has found this recipe for you. The recipe can be found by clicking on the image provided.</p>
+				</div>
+				<div id="food-img-holder">
+					<a href = "<%= @food_link%>" target="_blank"><img src = "<%= @food_img%>" height= "280" width= "250" alt = "Error"></a>
+				</div>
 		</div>
 		<a href="#two" class="button style2 down anchored">Next</a>
 	</section>
@@ -30,28 +33,30 @@
 			<header>
 				<h2><%=@movie_type.capitalize%></h2>
 			</header>
-			<p>Your search has returned <strong><%=@movie_title%></strong>! Click on the image provided on the right to be taken to its imdb page. </p>
+			<div class="text-bx">
+				<p>Your search has returned <strong><%=@movie_title%></strong>! Click on the image provided on the right to be taken to its IMDB page. </p>
+			</div>
 			<div class = "img-holder">
-			<img src = "<%= @movie_img %>" alt = "Error">
-		</div>
+				<a href = "https://www.imdb.com/title/<%= @movie_id %>/" target="_blank"><img src = "<%= @movie_img%>"  height= "280" width= "200" alt = "Error"></a>
+			</div>
 		</div>
 		
 			<a href="#three" class="button style2 down anchored">Next</a>
 	</section>
 	
 <!-- Three -->
-	<section id="three" class="main style2 left dark fullscreen">
+	<section id="three" class="main style2 right dark fullscreen">
 		<div class="content box style2">
 			<header>
 				<h2>Youtube</h2>
-			</header>
-			<p>Lorem ipsum dolor sit amet et sapien sed elementum egestas dolore condimentum.
-				Fusce blandit ultrices sapien, in accumsan orci rhoncus eu. Sed sodales venenatis arcu,
-				id varius justo euismod in. Curabitur egestas consectetur magna.</p>
+			<header>
+				<div class="txt-box">
+					<p>Text</p>
+				</div>
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/4QJSXILy3BM" frameborder="0" allowfullscreen></iframe>
+				
 		</div>
-		<iframe width="560" height="315" src="https://www.youtube.com/embed/4QJSXILy3BM" frameborder="0" allowfullscreen></iframe>
-			<a href="#four" class="button style2 down anchored">Next</a>
-			
+		<a href="#four" class="button style2 down anchored">Next</a>
 	</section>
 	
 <!-- GIFS -->

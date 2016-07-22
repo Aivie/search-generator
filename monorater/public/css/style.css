@@ -2241,7 +2241,37 @@ button.style2.down {
     -ms-transform: translateZ(0);
     transform: translateZ(0);
     position: relative;
-    width: 35%;
+    width: 50%;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.txt-box {
+    -moz-transition: all 1s ease;
+    -webkit-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+    -moz-transform: translateZ(0);
+    -webkit-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    transform: translateZ(0);
+    position: relative;
+    width: 60%;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.text-bx {
+    -moz-transition: all 1s ease;
+    -webkit-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+    -moz-transform: translateZ(0);
+    -webkit-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    transform: translateZ(0);
+    position: relative;
+    width: 60%;
     display: inline-block;
     vertical-align: middle;
 }
@@ -2265,7 +2295,8 @@ button.style2.down {
 }
 
 .main.style2.right .content {
-    left: 65%;
+    /*left: 65%;*/
+    left: 53%;
 }
 
 .main.style2.inactive.left .content {
@@ -4442,7 +4473,16 @@ footer {
     /*margin-right: 45%;*/
     /*margin-top: %;*/
     /*width: 32%;*/
-    /*height: 100%;*/
+    
     float: right;
-    overflow: auto;
+    overflow: hidden;
+    display: inline-block;
+}
+
+#food-img-holder{
+    float: left;
+    overflow: hidden;
+    display: inline-block;
+    margin-top: 28px;
+    margin-right: 15px;
 }
