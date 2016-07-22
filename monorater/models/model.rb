@@ -83,8 +83,8 @@ def find_video(user_input)
     
         enter_vid_hash = data["items"]
         choose_vid = enter_vid_hash.sample
-        @vid_id = choose_vid["id"]["videoId"] 
-        @vid_pic = choose_vid["snippet"]["thumbnails"]["default"]["url"]
+        vid_id = choose_vid["id"]["videoId"] 
+        # @vid_pic = choose_vid["snippet"]["thumbnails"]["default"]["url"]
     
     else
         
@@ -95,8 +95,8 @@ def find_video(user_input)
     
         enter_vid_hash = data["items"]
         choose_vid = enter_vid_hash.sample
-        @vid_id = choose_vid["id"]["videoId"]
-        @vid_pic = choose_vid["snippet"]["thumbnails"]["default"]["url"]
+        vid_id = choose_vid["id"]["videoId"]
+        # @vid_pic = choose_vid["snippet"]["thumbnails"]["default"]["url"]
         
     end
     

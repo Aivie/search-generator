@@ -13,7 +13,7 @@ class ApplicationController < Sinatra::Base
     @gif_result = check_input(params[:user_input])
     @movie_result = find_movie(params[:user_input]) 
     @food_result = food_search(params[:user_input])
-    @movie_result = find_movie(params[:user_input])
+    @video_result = find_movie(params[:user_input])
     erb :result, :layout => :base
   end
 
