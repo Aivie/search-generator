@@ -101,6 +101,33 @@ end
 #yummly
 
 #e54e9cfa05d58b64bab7da2301f05c0b&
+require 'pry'
+
+
+
+
+def food_search
+    
+    Yummly.configure do |config|
+        config.app_id = "4e9f2aa0&"
+        config.app_key = "e54e9cfa05d58b64bab7da2301f05c0b"
+        config.use_ssl = true # Default is false
+    end
+    
+    user_input = "happy"
+
+    result = Yummly.search(user_input)
+    find_food = result["matches"]
+    random_food = find_food.sample
+    puts random_food["recipeName"]
+    
+end
+
+food_search
+
+binding.pry
+
+
 
 
 

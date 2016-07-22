@@ -2067,7 +2067,8 @@ button {
     -webkit-transition: all 0.2s ease-in-out;
     -ms-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
-    background-color: /*#98c593*/ #7171da;
+    background-color: /*#98c593*/
+    #7171da;
     border: 0;
     border-radius: 3.5em;
     color: #fff;
@@ -2124,7 +2125,8 @@ input[type="submit"]:hover,
 input[type="reset"]:hover,
 .button:hover,
 button:hover {
-    background-color: /*#a8d5a3*/ #aeaeea;
+    background-color: /*#a8d5a3*/
+    #aeaeea;
 }
 
 input[type="button"]:active,
@@ -2132,7 +2134,8 @@ input[type="submit"]:active,
 input[type="reset"]:active,
 .button:active,
 button:active {
-    background-color: /*#88b583*/ #4949d0;
+    background-color: /*#88b583*/
+    #4949d0;
 }
 
 input[type="button"].style2,
@@ -2766,18 +2769,102 @@ body {
 /* Intro */
 
 #intro {
-    background: /*url("images/overlay.png"), url("../../images/intro.jpg")*/ url("https://media.giphy.com/media/d97OPMEimWGBi/giphy.gif");
+    background: /*url("images/overlay.png"), url("../../images/intro.jpg")*/
+    url("https://media.giphy.com/media/d97OPMEimWGBi/giphy.gif");
+    /*Parallex Stars*/
+    /*@import compass*/
+    /* n is number of stars required */
+    /*@function multiple-box-shadow ($n) */
+    /*  $value: '#{random(2000)}px #{random(2000)}px #FFF'*/
+    /*  @for $i from 2 through $n*/
+    /*    $value: '#{$value} , #{random(2000)}px #{random(2000)}px #FFF'*/
+    /*  @return unquote($value)*/
+    /*$shadows-small:  multiple-box-shadow(700)*/
+    /*$shadows-medium: multiple-box-shadow(200)*/
+    /*$shadows-big:    multiple-box-shadow(100)*/
+    /*html*/
+    /*  height: 100%*/
+    /*  background: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%)*/
+    /*  overflow: hidden*/
+    /*#stars*/
+    /*  width: 1px*/
+    /*  height: 1px*/
+    /*  background: transparent*/
+    /*  box-shadow: $shadows-small*/
+    /*  animation			: animStar 50s linear infinite*/
+    /*  &:after*/
+    /*    content: " "*/
+    /*    position: absolute*/
+    /*    top: 2000px*/
+    /*    width: 1px*/
+    /*    height: 1px*/
+    /*    background: transparent*/
+    /*    box-shadow: $shadows-small*/
+    /*#stars2*/
+    /*  width: 2px*/
+    /*  height: 2px*/
+    /*  background: transparent*/
+    /*  box-shadow: $shadows-medium*/
+    /*  animation			: animStar 100s linear infinite*/
+    /*  &:after*/
+    /*    content: " "*/
+    /*    position: absolute*/
+    /*    top: 2000px*/
+    /*    width: 2px*/
+    /*    height: 2px*/
+    /*    background: transparent*/
+    /*    box-shadow: $shadows-medium*/
+    /*#stars3*/
+    /*  width: 3px*/
+    /*  height: 3px*/
+    /*  background: transparent*/
+    /*  box-shadow: $shadows-big*/
+    /*  animation			: animStar 150s linear infinite*/
+    /*  &:after*/
+    /*    content: " "*/
+    /*    position: absolute*/
+    /*    top: 2000px*/
+    /*    width: 3px*/
+    /*    height: 3px*/
+    /*    background: transparent*/
+    /*    box-shadow: $shadows-big*/
+    /*#title*/
+    /*  position: absolute*/
+    /*  top: 50%*/
+    /*  left: 0*/
+    /*  right: 0*/
+    /*  color: #FFF*/
+    /*  text-align: center*/
+    /*  font-family: 'lato',sans-serif*/
+    /*  font-weight: 300*/
+    /*  font-size: 50px*/
+    /*  letter-spacing: 10px*/
+    /*  margin-top: -60px*/
+    /*  padding-left: 10px*/
+    /*  span*/
+    /*    background: -webkit-linear-gradient(white, #38495a)*/
+    /*    -webkit-background-clip: text*/
+    /*    -webkit-text-fill-color: transparent*/
+    /*@keyframes animStar*/
+    /*  from	*/
+    /*    transform: translateY(0px)*/
+    /*  to		*/
+    /*    transform: translateY(-2000px)*/
+    /*End of Parallex Stars*/
     background-size: 100% 100%, cover;
     background-attachment: fixed, fixed;
-    background-position: /*top left, bottom*/center, center;
-    background-repeat: /*repeat,*/ no-repeat;
+    background-position: /*top left, bottom*/
+    center, center;
+    background-repeat: /*repeat,*/
+    no-repeat;
 }
 
 
 /* One */
 
 #one {
-    background: /*url("images/overlay.png"), url("../../images/one.jpg")*/ url("https://67.media.tumblr.com/4ac8f3bb5bf7a953efadfd27dfbdb53b/tumblr_mijf49rE3w1ri960io1_500.gif");
+    background: /*url("images/overlay.png"), url("../../images/one.jpg")*/
+    url("https://67.media.tumblr.com/4ac8f3bb5bf7a953efadfd27dfbdb53b/tumblr_mijf49rE3w1ri960io1_500.gif");
     background-size: 100% 100%, cover;
     background-attachment: fixed, fixed;
     background-position: top left, center center;
@@ -2788,21 +2875,26 @@ body {
 /* Two */
 
 #two {
-    background: /*url("images/overlay.png"), url("../../images/two.jpg")*/ url("https://67.media.tumblr.com/tumblr_ma5p1oh8oQ1rwlsczo1_500.gif");
+    background: /*url("images/overlay.png"), url("../../images/two.jpg")*/
+    url("https://67.media.tumblr.com/tumblr_ma5p1oh8oQ1rwlsczo1_500.gif");
     background-size: 100% 100%, cover;
     background-attachment: fixed, fixed;
     background-position: top left, center center;
     background-repeat: no-repeat;
 }
 
+
 /* Three */
+
 #three {
-    background: /*url("images/overlay.png"), url("../../images/two.jpg")*/ url("https://66.media.tumblr.com/tumblr_mea4mvcFh91rdyi7so1_500.gif");
+    background: /*url("images/overlay.png"), url("../../images/two.jpg")*/
+    url("https://66.media.tumblr.com/tumblr_mea4mvcFh91rdyi7so1_500.gif");
     background-size: 100% 100%, cover;
     background-attachment: fixed, fixed;
     background-position: top left, center center;
     background-repeat: no-repeat;
 }
+
 
 /* work */
 
@@ -4341,17 +4433,16 @@ footer {
 }
 
 /*Overflow Portfolio*/
-.gif_img{
-    width:300px;
-    height:300px;
-    margin-top:5px;
-    /*border: 5px;*/
+.gif_img {
+    width: 300px;
+    height: 300px;
+    margin-top: 5px;
 }
-
-.img-holder{
-    /*margin-right: 50%;*/
-    /*margin-top: 150px;*/
+.img-holder {
+    margin-right: 45%;
+    /*margin-top: %;*/
     /*width: 32%;*/
     /*height: 100%;*/
+    
     float: right;
 }
