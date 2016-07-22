@@ -1,0 +1,78 @@
+<!--Nav -->
+<!--<header>-->
+<!--	<nav id="nav">-->
+<!--		<ul>-->
+			<!--<li><a href="#intro">Intro</a></li>-->
+<!--			<li><a href="#one">Book</a></li>-->
+<!--			<li><a href="#two">Movie</a></li>-->
+<!--			<li><a href="#three">Youtube</a></li>-->
+<!--			<li><a href="#four">GIFs</a></li>-->
+<!--		</ul>-->
+<!--	</nav>-->
+<!--</header>-->
+
+<!-- One -->
+    <section id="one" class="main style2 right dark fullscreen">
+	    <div class="content box style2">
+			<header>
+				<h2>Music</h2>
+			<header>
+				<p>Lorem ipsum dolor sit amet et sapien sed elementum egestas dolore condimentum.
+				    Fusce blandit ultrices sapien, in accumsan orci rhoncus eu. Sed sodales venenatis arcu,
+					id varius justo euismod in. Curabitur egestas consectetur magna.</p>
+		</div>
+		<a href="#two" class="button style2 down anchored">Next</a>
+	</section>
+
+<!-- Two -->
+	<section id="two" class="main style2 left dark fullscreen">
+		<div class="content box style2" id="two-text">
+			<header>
+				<h2><%=@movie_type.capitalize%></h2>
+			</header>
+			<p>Your search has returned <strong><%=@movie_title%></strong>! Click on the image provided on the right to be taken to its imdb page. </p>
+		</div>
+		
+		<div class = "img-holder">
+			<img class = "gif_img"src = "<%= @movie_img %>" alt = "Error">
+		</div>
+			<a href="#three" class="button style2 down anchored">Next</a>
+	</section>
+	
+<!-- Three -->
+	<section id="three" class="main style2 left dark fullscreen">
+		<div class="content box style2">
+			<header>
+				<h2>Youtube</h2>
+			</header>
+			<p>Lorem ipsum dolor sit amet et sapien sed elementum egestas dolore condimentum.
+				Fusce blandit ultrices sapien, in accumsan orci rhoncus eu. Sed sodales venenatis arcu,
+				id varius justo euismod in. Curabitur egestas consectetur magna.</p>
+		</div>
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/4QJSXILy3BM" frameborder="0" allowfullscreen></iframe>
+			<a href="#four" class="button style2 down anchored">Next</a>
+			
+	</section>
+	
+<!-- GIFS -->
+        <article class="container box style2" id="four">
+				<header>
+					<h2>Magnis parturient</h2>
+					<p>Justo phasellus et aenean dignissim<br />
+					placerat cubilia purus lectus.</p>
+				</header>
+				<div class="inner gallery">
+					<div class="row 0%">
+						<div class="3u 12u(mobile)"><a href="images/fulls/01.jpg" class="image fit"><img class = "gif_img" src="<%= check_input(params[:user_input]) %>" alt="gif"></a></div>
+						<div class="3u 12u(mobile)"><a href="images/fulls/02.jpg" class="image fit"><img class = "gif_img" src="<%= check_input(params[:user_input]) %>" alt="gif"></a></div>
+						<div class="3u 12u(mobile)"><a href="images/fulls/03.jpg" class="image fit"><img class = "gif_img" src="<%= check_input(params[:user_input]) %>" alt="gif"></a></div>
+						<div class="3u 12u(mobile)"><a href="images/fulls/04.jpg" class="image fit"><img class = "gif_img" src="<%= check_input(params[:user_input]) %>" alt="gif"></a></div>
+					</div>
+					<div class="row 0%">
+						<div class="3u 12u(mobile)"><a href="images/fulls/05.jpg" class="image fit"><img class = "gif_img" src="<%= check_input(params[:user_input]) %>" alt="gif"></a></div>
+						<div class="3u 12u(mobile)"><a href="images/fulls/06.jpg" class="image fit"><img class = "gif_img" src="<%= check_input(params[:user_input]) %>" alt="gif"></a></div>
+						<div class="3u 12u(mobile)"><a href="images/fulls/07.jpg" class="image fit"><img class = "gif_img" src="<%= check_input(params[:user_input]) %>" alt="gif"></a></div>
+						<div class="3u 12u(mobile)"><a href="images/fulls/08.jpg" class="image fit"><img class = "gif_img"src="<%= check_input(params[:user_input]) %>" alt="gif"></a></div>
+					</div>
+				</div>
+			</article>

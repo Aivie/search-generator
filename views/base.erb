@@ -1,0 +1,57 @@
+<!-- The purpose of this base.erb is that it provides a layout that you can use for EVERY page. -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title><%=@title%></title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  
+  <!--<title>Big Picture by HTML5 UP</title>-->
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/font-awesome.min.css"/>
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<script src="public/js/script.js"></script>
+		<script src="public/js/jquery.min.js"></script>
+		<script src="public/js/jquery.poptrox.min.js"></script>
+		<script src="public/js/jquery.scrolly.min.js"></script>
+		<script src="public/js/jquery.scrollex.min.js"></script>
+		<script src="public/js/skel.min.js"></script>
+		<script src="public/js/util.js"></script>
+</head>
+<body>
+  <div class="container">
+    <!-- Header -->
+			<header id="header">
+
+				<!-- Logo -->
+					<h1 id="logo">Monorater</h1>
+
+				 <!--Nav -->
+					<!--<nav id="nav">-->
+					<!--	<ul>-->
+					<!--		<li><a href="#intro">Intro</a></li>-->
+					<!--		<li><a href="#one">What I Do</a></li>-->
+					<!--		<li><a href="#two">Who I Am</a></li>-->
+					<!--		<li><a href="#work">My Work</a></li>-->
+					<!--		<li><a href="#contact">Contact</a></li>-->
+					<!--	</ul>-->
+					<!--</nav>-->
+
+			</header>
+  </div>
+  <!-- EVERYTHING ABOVE THIS IS TEMPLATED -->
+  <!--<div class="container">-->
+  <%=yield%> <!-- THIS IS WHERE OTHER PAGES' INFO GOES -->
+  <!-- EVERYTHING BELOW THIS IS TEMPLATED -->
+  <!--</div>-->
+</body>
+</html>
