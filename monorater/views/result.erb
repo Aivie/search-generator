@@ -46,15 +46,18 @@
 	
 <!-- Three -->
 	<section id="three" class="main style2 right dark fullscreen">
-		<div class="content box style2">
+		<div class="content box style2" id="one-text">
 			<header>
 				<h2>Youtube</h2>
 			<header>
 				<div class="txt-box">
-					<p>Text</p>
+					<p>Your search has returned this </p>
 				</div>
-					<iframe width="560" height="315" src="https://www.youtube.com/embed/4QJSXILy3BM" frameborder="0" allowfullscreen></iframe>
-				
+				<!--width="560" height="315"-->
+				<div class="food-img-holder">
+					<!--width="560" height="315"-->
+					<a href = "https://www.youtube.com/watch?v=<%= @vid_id %>/"><img src = "<%= @vid_pic %>" width="560" height="315"></a>
+				</div>
 		</div>
 		<a href="#four" class="button style2 down anchored">Next</a>
 	</section>
@@ -62,9 +65,9 @@
 <!-- GIFS -->
         <article class="container box style2" id="four">
 				<header>
-					<h2>Magnis parturient</h2>
-					<p>Justo phasellus et aenean dignissim<br />
-					placerat cubilia purus lectus.</p>
+					<h2>GIFs</h2>
+					<p>Here are <strong>8</strong> GIFs for your entertainment.<br />
+					</p>
 				</header>
 				<div class="inner gallery">
 					<div class="row 0%">

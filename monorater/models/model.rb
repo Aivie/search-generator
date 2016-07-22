@@ -6,6 +6,7 @@ require 'omdbapi'
 require 'yummly'
 
 #Gif Searcher
+
 def check_input(user_input)
     
         if user_input == ""
@@ -40,11 +41,12 @@ end
 
 
 #Movie Search
+
 def find_movie(user_input)
     
     if user_input == ""
         
-        input = ["Sad","Bad","happy","love","why","murder", "anime","mystery","holy","pokemon","phantom","ghost", "comedy", "romance", "action", "drama", "mecha", "disney"]
+        input = ["Sad","Bad","happy","love","why","murder","mystery","holy","pokemon","phantom","ghost", "comedy", "romance", "action", "drama", "mecha", "disney"]
         search = OMDB.search(input.sample)
         movie = search.sample
         @movie_title = movie[:title]
@@ -54,7 +56,7 @@ def find_movie(user_input)
         
     else
     
-        search = OMDB.search(user_input)
+        search = OMDB.search(user_input.gsub(" ", "+"))
         movie = search.sample
         @movie_title = movie[:title]
         @movie_id = movie[:imdb_id]
@@ -66,11 +68,41 @@ def find_movie(user_input)
 end
 
 
-#Song search
-def find_song(user_input)
+#Video search
+
+def find_video(user_input)
+    
+    if user_input == ""
+        
+        input = ["top", "Marcus Butler", "Tyler Oakley", "Zoella", "PointlessBlog", "FunforLuis", "SprinkleOfGlitter", "ThatcherJoe", "Games", "Music", "Pewdiepie", "Caspar Lee", "Connor Franta", "Troye Sivan", "NigaHiga", "Upperline", "Parachuting", "Extreme Sports", "Happy", "Hello", "Avril Lavigne", "Adele", "Taylor Swift", "Katy Perry", "Domics", "iiSuperwomanii", "Miranda Sings", "Jenna Marbles", "Anime", "Disney", "Cartoon Network", "Federator Studios", "Bee and Puppycat", "Shirokuma Cafe", "Will Darbyshire", "Shane Dawson"]
+        
+        url = "https://www.googleapis.com/youtube/v3/search?part=snippet%20&q=#{input.sample.gsub(" ", "+")}%20&type=video%20&key=AIzaSyDGO_FsdRi0Q7Mqctdx2PEJe-n7lm_zIbo"
+        uri = URI(url)
+        response = Net::HTTP.get(uri)
+        data = JSON.parse(response)
+    
+        enter_vid_hash = data["items"]
+        choose_vid = enter_vid_hash.sample
+        @vid_id = choose_vid["id"]["videoId"] 
+        @vid_pic = choose_vid["snippet"]["thumbnails"]["default"]["url"]
+    
+    else
+        
+        url = "https://www.googleapis.com/youtube/v3/search?part=snippet%20&q=#{user_input.gsub(" ", "+")}%20&type=video%20&key=AIzaSyDGO_FsdRi0Q7Mqctdx2PEJe-n7lm_zIbo"
+        uri = URI(url)
+        response = Net::HTTP.get(uri)
+        data = JSON.parse(response)
+    
+        enter_vid_hash = data["items"]
+        choose_vid = enter_vid_hash.sample
+        @vid_id = choose_vid["id"]["videoId"]
+        @vid_pic = choose_vid["snippet"]["thumbnails"]["default"]["url"]
+        
+    end
     
 end
 
+#Food search
 
 def food_search(user_input)
     
@@ -97,7 +129,7 @@ def food_search(user_input)
         
     else
         
-        url = "https://api.yummly.com/v1/api/recipes?_app_id=4e9f2aa0%26&_app_key=e54e9cfa05d58b64bab7da2301f05c0b&q=#{user_input}"
+        url = "https://api.yummly.com/v1/api/recipes?_app_id=4e9f2aa0%26&_app_key=e54e9cfa05d58b64bab7da2301f05c0b&q=#{user_input.gsub(" ", "+")}"
         uri = URI(url)
         response = Net::HTTP.get(uri)
         data = JSON.parse(response)
@@ -118,9 +150,9 @@ def food_search(user_input)
     
 end
 
-# food_search(user_input)
-
-# binding.pry
+#ID for youtube
+#monorater-1380
+#AIzaSyBYuC8yk2jXxalAC3Yg_52ZZuIhlQW5v0o
 
 
 

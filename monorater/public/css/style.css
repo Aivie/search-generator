@@ -2895,7 +2895,8 @@ body {
 
 #one {
     background: /*url("images/overlay.png"), url("../../images/one.jpg")*/
-    url("https://67.media.tumblr.com/4ac8f3bb5bf7a953efadfd27dfbdb53b/tumblr_mijf49rE3w1ri960io1_500.gif");
+    /*url("https://67.media.tumblr.com/4ac8f3bb5bf7a953efadfd27dfbdb53b/tumblr_mijf49rE3w1ri960io1_500.gif");*/
+    url("https://i.kinja-img.com/gawker-media/image/upload/om24ea1w0zqg8hurhvfg.gif");
     background-size: 100% 100%, cover;
     background-attachment: fixed, fixed;
     background-position: top left, center center;
@@ -2907,7 +2908,8 @@ body {
 
 #two {
     background: /*url("images/overlay.png"), url("../../images/two.jpg")*/
-    url("https://67.media.tumblr.com/tumblr_ma5p1oh8oQ1rwlsczo1_500.gif");
+    /*url("https://67.media.tumblr.com/tumblr_ma5p1oh8oQ1rwlsczo1_500.gif");*/
+    url("https://66.media.tumblr.com/3d1d8bb9936cbf28e6968f584e17dcd5/tumblr_nv2kw8bvQx1tq4of6o1_500.gif");
     background-size: 100% 100%, cover;
     background-attachment: fixed, fixed;
     background-position: top left, center center;
@@ -2919,7 +2921,8 @@ body {
 
 #three {
     background: /*url("images/overlay.png"), url("../../images/two.jpg")*/
-    url("https://66.media.tumblr.com/tumblr_mea4mvcFh91rdyi7so1_500.gif");
+    /*url("https://66.media.tumblr.com/tumblr_mea4mvcFh91rdyi7so1_500.gif");*/
+    url("http://www.wetheunicorns.com/wp-content/uploads/2016/06/marcus-.gif");
     background-size: 100% 100%, cover;
     background-attachment: fixed, fixed;
     background-position: top left, center center;
